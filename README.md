@@ -1,2 +1,2 @@
 # python-learning
-I try hard since 9/25/2026
+I started taking Python seriously on September 25, 2026.
