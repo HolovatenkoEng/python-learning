@@ -1,8 +1,15 @@
-number = int(input("Enter a number: "))
+alien_0 = {'x_position': 0, 'y_position': 25, 'speed': 'medium'}
+print(f"Original x-position: {alien_0['x_position']}")
 
-if number % 2 == 0:
-    print(f"{number} is even.")
+# Определение величины смещения
+if alien_0['speed'] == 'slow':
+    x_increment = 1
+elif alien_0['speed'] == 'medium':
+    x_increment = 2
 else:
-    print(f"{number} is odd.")
+    x_increment = 3
 
-print(f"Remainder by 9: {number % 9}")
+# Обновление позиции
+alien_0['x_position'] += x_increment
+
+print(f"New x-position: {alien_0['x_position']}")
